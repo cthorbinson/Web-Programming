@@ -1,0 +1,53 @@
+<table class="opening_hours_table">
+	<tr>
+		<th>Monday</th>
+		<td>9am - 5pm</td>
+	</tr>
+	<tr>
+		<th>Tuesday</th>
+		<td>9am - 5pm</td>
+	</tr>
+	<tr>
+		<th>Wednesday</th>
+		<td>9am - 5pm</td>
+	</tr>
+	<tr>
+		<th>Thursday</th>
+		<td>9am - 5pm</td>
+	</tr>
+	<tr>
+		<th>Friday</th>
+		<td>9am - 4pm</td>
+	</tr>
+	<tr>
+		<th>Saturday</th>
+		<td>9am - 4pm</td>
+	</tr>
+	<tr>
+		<th>Sunday</th>
+		<td>Closed</td>
+	</tr>
+</table>
+
+<div class="map" id="map"></div>
+
+<script>
+
+      function initMap() {
+        var myLatLng = {lat: 52.203595, lng: 0.13506};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArz0dINuBbrpalfjfTVlgrLzIwtq9oQ_c&callback=initMap">
+</script>

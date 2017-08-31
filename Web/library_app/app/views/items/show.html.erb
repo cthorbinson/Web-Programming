@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @item.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.title %>
+</p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @item.ISBN %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.Description %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) if admin? || is_lib?%> |
+<%= link_to 'Back', items_path %>

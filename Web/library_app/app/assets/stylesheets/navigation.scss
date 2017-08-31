@@ -1,0 +1,19 @@
+nav {
+	ul{
+		list-style: none;
+
+		li {
+			display: inline;
+			margin: 15px;
+			width: 30px;
+
+			a {
+				color: #002856;
+			}
+			
+			a:hover {
+				color: #8C7D4F;
+			}
+		}
+	}
+}
